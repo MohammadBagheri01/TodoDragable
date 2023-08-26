@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modalError" id="modalError">
+      <h3>Plase Enter Todo</h3>
+      <button id="modalErrorBtn">OK</button>
+    </div>
+    <main id="container">
+      <div id="modal" class="modal">
+        <header id="modal-header">
+          <h2 id="modal-title">Add Todo</h2>
+          <i class="fa fa-close" id="modal-close-icon"></i>
+        </header>
+        <input type="text" id="todo-inp" placeholder="write your Todo" />
+        <button id="modal-add-btn">Add Todo</button>
+      </div>
+      <section id="container-todo">
+        <div class="content" id="no-status">
+          <h1 class="title">No Status</h1>
+          <button id="add-todo-btn">+ Add Todo</button>
+          <div class="todos"></div>
+        </div>
+        <div class="content" id="not-started">
+          <h1 class="title">Not Started</h1>
+          <div class="todos"></div>
+        </div>
+        <div class="content" id="in-progress">
+          <h1 class="title">In Progress</h1>
+          <div class="todos"></div>
+        </div>
+        <div class="content" id="completed">
+          <h1 class="title">Completed</h1>
+          <div class="todos"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
